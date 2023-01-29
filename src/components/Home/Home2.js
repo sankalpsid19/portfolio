@@ -2,11 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 
 function Home2() {
   return (
@@ -62,7 +60,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/sankalp-yadav-au17"
+                  href="https://github.com/sankalpsid19"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -89,6 +87,17 @@ function Home2() {
                 >
                   <AiFillInstagram />
                 </a>
+              </li>
+              <li className="social-icons">
+                <span
+                  onClick={(e) => {
+                    window.location.href = "mailto:sankalp_ma@srmuniv.edu.in";
+                    e.preventDefault();
+                  }}
+                  className="icon-colour home-social-icons"
+                >
+                  <SiGmail />
+                </span>
               </li>
             </ul>
           </Col>
